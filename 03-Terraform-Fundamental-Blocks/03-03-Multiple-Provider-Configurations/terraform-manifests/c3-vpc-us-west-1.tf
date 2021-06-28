@@ -1,9 +1,9 @@
 # Resource Block to Create VPC in us-west-1
-resource "aws_vpc" "vpc-us-west-1" {
+resource "aws_vpc" "vpc-ap-south-1" {
   cidr_block = "10.1.0.0/16"
-  provider = aws.aws-west-1
+  provider = aws.aws-ap-south-1
   tags = {
-    "Name" = "vpc-us-west-1"
+    "Name" = "vpc-ap-south-1"
   }
 }
 

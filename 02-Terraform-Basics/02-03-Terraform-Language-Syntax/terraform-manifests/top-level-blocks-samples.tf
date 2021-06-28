@@ -12,7 +12,7 @@ terraform {
   backend "s3" {
     bucket = "terraform-stacksimplify"
     key    = "dev2/terraform.tfstate"
-    region = "us-east-1"  
+    region = "ap-south-1"  
 
     # For State Locking
     dynamodb_table = "terraform-dev-state-table"
@@ -21,7 +21,7 @@ terraform {
 #####################################################################
 # Block-2: Provider Block
 provider "aws" {
-  profile = "default" # AWS Credentials Profile configured on your local desktop terminal  $HOME/.aws/credentials
+  profile = "anand_demo" # AWS Credentials Profile configured on your local desktop terminal  $HOME/.aws/credentials
   region  = "us-east-1"
 }
 #####################################################################
@@ -42,6 +42,7 @@ variable "instance_type" {
 output "ec2_instance_publicip" {
   description = "EC2 Instance Public IP"
   value = aws_instance.my-ec2-vm.public_ip
+  
 }
 #####################################################################
 # Block-6: Local Values Block

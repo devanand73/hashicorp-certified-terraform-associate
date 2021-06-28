@@ -27,7 +27,7 @@
 - Go to Right Navigation on github Repo -> Releases -> Create a new release
 - **Tag Version:** 1.0.0
 - **Release Title:** Release-1 terraform-aws-s3-website
-- **Write:** Terraform Module for Private Registry - terraform-aws-s3-website
+- **Write:** cd 
 - Click on **Publish Release**
 
 
